@@ -1,14 +1,14 @@
 package seq_test
 
 import (
-	yup "github.com/gloo-foo/framework"
+	gloo "github.com/gloo-foo/framework"
 	. "github.com/yupsh/seq"
 )
 
 func ExampleSeq_step() {
 	// seq 2 2 10
-	yup.MustRun(
-		Seq("2", "2", "10"),
+	gloo.MustRun(
+		Seq(2.0, 2.0, 10.0),
 	)
 	// Output:
 	// 2
@@ -17,4 +17,3 @@ func ExampleSeq_step() {
 	// 8
 	// 10
 }
-

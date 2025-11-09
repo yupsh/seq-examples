@@ -1,14 +1,14 @@
 package seq_test
 
 import (
-	yup "github.com/gloo-foo/framework"
+	gloo "github.com/gloo-foo/framework"
 	. "github.com/yupsh/seq"
 )
 
 func ExampleSeq_basic() {
 	// seq 5
-	yup.MustRun(
-		Seq("5"),
+	gloo.MustRun(
+		Seq(5.0),
 	)
 	// Output:
 	// 1
@@ -17,4 +17,3 @@ func ExampleSeq_basic() {
 	// 4
 	// 5
 }
-
